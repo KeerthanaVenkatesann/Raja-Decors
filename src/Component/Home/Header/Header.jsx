@@ -44,7 +44,16 @@ export default function Header( )  {
     setDropdownState({});  
   }, [isMobile]); 
   return (
-    <AppBar position="fixed" sx={{ backgroundColor: 'whitesmoke',color:'black',px:{md:10} }}>
+    <AppBar 
+      position="fixed" 
+      sx={{ 
+        backgroundColor: 'whitesmoke',
+        color:'black',
+        px:{md:10},
+        height:64,
+        zIndex: 1000,
+      }}
+    >
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           <img src={Logo} alt='logo'/>
@@ -65,7 +74,19 @@ export default function Header( )  {
         <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
           {menuItems.map((item, index) => (
             <React.Fragment key={index}>
-              <Button color="inherit" onClick={item.subMenu ? () => toggleDropdown(index) : undefined} href={item.link || '#!'}>
+              <Button 
+                sx={{
+                  textTransform:'none',
+                  fontSize:18,
+                }}
+                color="inherit" 
+                onClick={
+                  item.subMenu ? 
+                  () => toggleDropdown(index) : 
+                  undefined
+                } 
+                href={item.link || '#!'}
+              >
                 {item.label}
               </Button>
 
