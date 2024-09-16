@@ -1,5 +1,11 @@
 import React from 'react';
-import { Box, Typography, Grid, Container, Link } from '@mui/material';
+import { Box, Typography, Grid, Container, Link, Divider } from '@mui/material';
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
+import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined'; 
+import { TiSocialFacebook } from "react-icons/ti";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -8,14 +14,17 @@ export default function Footer() {
         backgroundColor: '#333',
         color: '#fff',
         padding: '20px 0',
-        mt: 'auto',
+        mt:190,
+        // 'auto',
+        pt:10,
+        pb:5
       }}
     >
       <Container>
-        <Grid container justifyContent="center" textAlign={{ xs: 'center'}}  spacing={4}>
+        <Grid container justifyContent="center" textAlign={{ xs: 'start'}}  spacing={4}>
           {/* Column 1 */}
           <Grid item xs={12} sm={3}>
-            <Typography variant="h6">Company</Typography>
+            <Typography variant="h5" mb={2}>Why us</Typography>
             <Link href="#" color="inherit" underline="none">
               About Us
             </Link>
@@ -31,54 +40,56 @@ export default function Footer() {
 
           {/* Column 2 */}
           <Grid item xs={12} sm={3}>
-            <Typography variant="h6">Support</Typography>
+            <Typography variant="h5" mb={2}>Quick Links</Typography>
             <Link href="#" color="inherit" underline="none">
-              Help Center
+              Home
             </Link>
             <br />
             <Link href="#" color="inherit" underline="none">
-              Contact Us
+              Services
             </Link>
             <br />
             <Link href="#" color="inherit" underline="none">
-              FAQs
+              About US
+            </Link>
+            <br/>
+            <Link href="#" color="inherit" underline="none">
+              Conatct US
             </Link>
           </Grid>
 
           {/* Column 3 */}
           <Grid item xs={12} sm={3}>
-            <Typography variant="h6">Legal</Typography>
+            <Typography variant="h5" mb={2}>Reach us</Typography>
             <Link href="#" color="inherit" underline="none">
-              Privacy Policy
+             <LocationOnOutlinedIcon />
             </Link>
             <br />
             <Link href="#" color="inherit" underline="none">
-              Terms of Service
+             <LocalPhoneOutlinedIcon/>
             </Link>
             <br />
             <Link href="#" color="inherit" underline="none">
-              Cookie Policy
+             <MailOutlineOutlinedIcon/>
             </Link>
           </Grid>
 
           {/* Column 4 */}
           <Grid item xs={12} sm={3}>
-            <Typography variant="h6">Follow Us</Typography>
+            <Typography variant="h5" mb={2}>Follow Us on:</Typography>
             <Link href="#" color="inherit" underline="none">
-              Facebook
-            </Link>
-            <br />
+              <TiSocialFacebook/>
+            </Link> 
             <Link href="#" color="inherit" underline="none">
-              Twitter
-            </Link>
-            <br />
+               <FaXTwitter/>
+            </Link> 
             <Link href="#" color="inherit" underline="none">
-              Instagram
+               <FaLinkedinIn/>
             </Link>
           </Grid>
         </Grid>
-
-        <Box mt={4} textAlign="center">
+        <Divider sx={{bgcolor:'white',mt:12}}></Divider>
+        <Box mt={5} textAlign="center">
           <Typography variant="body2">
             © 2024 Your Company. All rights reserved.
           </Typography>
