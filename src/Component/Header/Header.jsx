@@ -2,15 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { AppBar, Toolbar, IconButton, Typography, MenuItem, Box, Button, Collapse, useMediaQuery, useTheme } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp'; 
-import Logo from '../../../assets/AGNEE CLEANING SERVICES LLC.pdf';
+import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';  
 
 export default function Header( )  {
 
     const menuItems = [
         { label: 'Home', link: '#home' },
         {
-            label: 'Services',
+            label: 'Our Services',
             subMenu: [
                 { label: 'Sass', link: '#sass' },
                 { label: 'Less', link: '#less' },
@@ -31,12 +30,13 @@ export default function Header( )  {
   };
 
   // Toggle dropdowns dynamically by key
-  const toggleDropdown = (key) => {
+  const toggleDropdown = (key, open) => {
     setDropdownState((prevState) => ({
       ...prevState,
-      [key]: !prevState[key],
+      [key]: open,
     }));
   };
+
   useEffect(() => {
     if (!isMobile) {
       setMobileMenuOpen(false);  
@@ -47,7 +47,7 @@ export default function Header( )  {
     <AppBar 
       position="fixed" 
       sx={{ 
-        backgroundColor: 'whitesmoke',
+        backgroundColor: 'white',
         color:'black',
         px:{md:10},
         height:64,
@@ -56,7 +56,7 @@ export default function Header( )  {
     >
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          <img src={Logo} alt='logo'/>
+          <img  alt='logo'/>
         </Typography>
 
         {/* Mobile Menu Icon */}
@@ -74,17 +74,18 @@ export default function Header( )  {
         <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
           {menuItems.map((item, index) => (
             <React.Fragment key={index}>
+              <Box
+              onMouseEnter={() => toggleDropdown(index, true)}  
+              onMouseLeave={() => toggleDropdown(index, false)}
+              sx={{
+                position:'relative'
+              }}>
               <Button 
                 sx={{
                   textTransform:'none',
                   fontSize:18,
                 }}
-                color="inherit" 
-                onClick={
-                  item.subMenu ? 
-                  () => toggleDropdown(index) : 
-                  undefined
-                } 
+                color="inherit"  
                 href={item.link || '#!'}
               >
                 {item.label}
@@ -99,7 +100,9 @@ export default function Header( )  {
                         mt: 4,ml:-10, 
                         boxShadow: 3,
                         zIndex:999,
-                        borderRadius:1
+                        borderRadius:1,
+                        top:0,
+                        left:85,
                     }}
                   >
                     {item.subMenu.map((subItem, subIndex) => (
@@ -110,6 +113,7 @@ export default function Header( )  {
                   </Box>
                 </Collapse>
               )}
+              </Box>
             </React.Fragment>
           ))}
         </Box>
