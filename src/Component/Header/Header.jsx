@@ -3,6 +3,7 @@ import { AppBar, Toolbar, IconButton, Typography, MenuItem, Box, Button, Collaps
 import MenuIcon from '@mui/icons-material/Menu';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';  
+import { Link } from 'react-router-dom';
 
 export default function Header( )  {
 
@@ -10,6 +11,7 @@ export default function Header( )  {
         { label: 'Home', link: '#home' },
         {
             label: 'Our Services',
+            link:'/service',
             subMenu: [
                 { label: 'Sass', link: '#sass' },
                 { label: 'Less', link: '#less' },
@@ -85,10 +87,11 @@ export default function Header( )  {
                   textTransform:'none',
                   fontSize:18,
                 }}
-                color="inherit"  
-                href={item.link || '#!'}
+                color="inherit"   
               >
-                {item.label}
+                <Link to={item.link}>
+                    {item.label}
+                </Link>
               </Button>
 
               {item.subMenu && (
