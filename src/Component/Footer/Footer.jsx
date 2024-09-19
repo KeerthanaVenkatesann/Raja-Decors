@@ -13,9 +13,7 @@ export default function Footer() {
       sx={{
         backgroundColor: '#333',
         color: '#fff',
-        padding: '20px 0',
-        mt:190,
-        // 'auto',
+        padding: '20px 0', 
         pt:10,
         pb:5
       }}
