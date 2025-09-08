@@ -1,0 +1,52 @@
+.menu-page .title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.menu-page .highlight {
+  color: #668f5d;
+  font-style: italic;
+}
+
+.menu-card {
+  border-radius: 20px;
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+  min-height: 280px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+.decor-menu{
+  margin-top: 170px;
+}
+.menu-card .icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: pulse 2s infinite;
+}
+
+.menu-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+
+.menu-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.menu-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}

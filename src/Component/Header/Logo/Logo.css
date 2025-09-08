@@ -1,0 +1,79 @@
+.logo-title{
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+}
+.logo-div-agnee{
+    display: flex;
+    gap: 10px;
+}
+.nav-main-logo{
+    margin-top: 3px;
+    margin-right: -35px;
+}
+
+.title-one-agnee{
+    color: #1988c9;
+    font-weight: bolder;
+    font-size: 14px;
+
+     font-family: "Merienda", cursive;
+}
+.title-two-agnee{
+    font-weight: bolder;
+    
+}
+.logo-div-agnee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav-main-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 0.4s ease; /* smooth resize */
+}
+
+.title-three-agnee{
+background-color: #c04338;
+width: 196px;
+height: 2px;
+border-radius: 5px;
+
+}
+@media screen and (max-width:426px) {
+    .logo-title{
+        display: flex;
+        flex-direction: column;
+        font-size: 8px;
+    }
+    .logo-div-agnee{
+        display: flex;
+        gap: 8px;
+    }
+    .nav-main-logo{
+        margin-top: 2px;
+    }
+    
+    .title-one-agnee{
+        color: #1988c9;
+        font-weight: bolder;
+        font-size: 12px;
+         font-family: "Merienda", cursive;
+    }
+    .title-two-agnee{
+        font-weight: bolder;
+        
+    }
+    
+    .title-three-agnee{
+    background-color: #c04338;
+    width: 160px;
+    height: 2px;
+    border-radius: 5px;
+    
+    }
+}

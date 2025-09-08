@@ -1,0 +1,33 @@
+
+.logo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .logo-container img {
+    width: 100px;  
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease;  
+  }
+  .logo-container img:hover {
+    filter: grayscale(0) !important;
+    opacity: 1 !important;
+    transform: scale(1.1) !important;  
+  }
+  .agnee-clients{
+    color:#11343c ;
+    font-weight: lighter;
+    font-size: 3rem;
+    font-style: normal;
+  }
+  .agnee-clients:hover{
+    cursor: pointer;
+    color:#e5d95d ;
+    transition: 1s;
+  }

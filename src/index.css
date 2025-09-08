@@ -1,0 +1,44 @@
+
+
+*{
+ font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+
+}
+a{
+  text-decoration: none !important;
+
+}
+body{
+  overflow-x: hidden !important;
+}
+
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #c0d5eb; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #11343c; 
+  border-radius: 10px; 
+  border: 2px solid transparent; 
+}
+
+
+/* ::-webkit-scrollbar-thumb:hover {
+  background-color: #5295de; 
+  transition: 2s !important;
+} */
+
+.container {
+  overflow-x: hidden;
+  position: relative; /* Ensure child elements are positioned properly */
+}

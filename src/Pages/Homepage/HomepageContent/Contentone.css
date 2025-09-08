@@ -1,0 +1,422 @@
+/* Parallax effect with bubble background */
+.parallax {
+  height: 750px; 
+  background: -webkit-linear-gradient(45deg, #b1d2e5, #ffffff); /* Bubble background gradient */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Bubbles animation */
+.bg-bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+li {
+  position: absolute;
+  list-style: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.15);
+  bottom: -160px;
+
+  animation: square 20s infinite;
+  transition-timing-function: linear;
+}
+
+li:nth-child(1) {
+  left: 10%;
+}
+li:nth-child(2) {
+  left: 20%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 2s;
+  animation-duration: 17s;
+}
+li:nth-child(3) {
+  left: 25%;
+  animation-delay: 4s;
+}
+li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-duration: 22s;
+}
+li:nth-child(5) {
+  left: 70%;
+}
+li:nth-child(6) {
+  left: 80%;
+  width: 120px;
+  height: 120px;
+  animation-delay: 3s;
+}
+li:nth-child(7) {
+  left: 32%;
+  width: 160px;
+  height: 160px;
+  animation-delay: 7s;
+}
+li:nth-child(8) {
+  left: 55%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 15s;
+  animation-duration: 40s;
+}
+li:nth-child(9) {
+  left: 25%;
+  width: 10px;
+  height: 10px;
+  animation-delay: 2s;
+  animation-duration: 40s;
+}
+li:nth-child(10) {
+  left: 90%;
+  width: 160px;
+  height: 160px;
+  animation-delay: 11s;
+}
+
+@keyframes square {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-500px) rotate(600deg);
+  }
+}
+
+/* Content styling */
+.content {
+  position: relative;
+  z-index: 2; /* To ensure the content is above the bubbles */
+  color: black;
+}
+.main-content-img{
+  width: 480px;
+  height: 380px;
+}
+/* .read-more{
+  
+} */
+ .agnee-font{
+  color: #2e7bd4;
+  /* font-family: "Josefin Sans", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal; */
+  /* font-family: "Ubuntu Condensed", sans-serif !important; */
+  font-weight: lighter;
+  font-size: 3.5rem;
+  font-style: normal;
+ }
+ .agnee-service-font{
+  color:#e7958d ;
+  font-weight: lighter;
+  font-size: 3.2rem;
+  font-style: normal;
+ }
+ .homepage-content {
+  /* padding: 20px; */
+}
+
+.service-item {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.service-icon {
+  font-size: 40px;
+  color: #ea9390; 
+}
+
+.service-item h5 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.service-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.service-line {
+  height: 1px;
+  background-color: #eee9e9; 
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .service-item {
+    flex-direction: column;
+  }
+
+  .service-icon {
+    margin-bottom: 10px;
+  }
+}
+
+.service-agnee-d-font {
+  color: #e0e465;
+  font-weight: 300 !important;
+  font-size: 1.5rem !important;
+  transition: color 1s ease-in-out, margin-left 0.3s ease-in-out; 
+}
+
+.service-agnee-d-font:hover {
+  color: #ea9390; 
+  cursor: pointer;
+  margin-left: 5px;
+}
+.icon-home-page{
+  color: #ea9390; 
+  cursor: pointer !important;
+  animation: bounce 2s infinite;
+  z-index: 1000;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+.wavy-hr-container {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.wavy-hr {
+  border: none;
+  border-top: 3px solid #e4eb7a;
+  width: 80%;
+  margin: 20px auto;
+  position: relative;
+  height: 4px;
+  animation: wave 5s ease-in-out infinite;
+  background-size: 25px 100%;
+  background-image: linear-gradient(90deg, #11343c 25%, transparent 25%);
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.writing-animation {
+  white-space: wrap;
+  overflow: hidden;
+  border-right: 3px solid #ea9390;
+  width: 0;
+  animation: typing 4s steps(30, end) forwards, blink-caret 0.75s step-end ;
+  display: inline-block;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  100% { border-color: black; }
+}
+.vision{
+  color: #ea9390; 
+ 
+}
+
+
+.parallax-two {
+  background-image: url('../../../assets/decortwoimg.jpg');
+  height: 750px; 
+  background-attachment: fixed; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  color: white; 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Black overlay with 50% opacity */
+  z-index: 1; /* Ensure overlay is below the text */
+}
+
+.carousel-caption {
+position: absolute;
+top: 280px;
+color: rgb(222, 216, 216) !important;
+  z-index: 2; /* Ensure the text is above the overlay */
+}
+
+
+.countup-section {
+position: relative;
+z-index: 1; 
+}
+
+.countup-cards {
+display: flex;
+justify-content: space-around; /* Space cards evenly */
+padding: 20px; /* Add padding around cards */
+position: relative;
+z-index: 2; /* Ensure cards are above the background */
+}
+
+.countup-card {
+background: white; /* Background for cards */
+border-radius: 8px; /* Rounded corners */
+padding: 20px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+flex: 1; /* Allow cards to grow equally */
+margin: 10px; /* Space between cards */
+}
+.title-home{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width:768px) and (min-width:425px) {
+  .agnee-font{
+    font-size: 2rem;
+  }
+  .main-div-fr-two{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin-top: 20px;
+  }
+  .main-content-img{
+    width: 370px;
+    height: 280px;
+    margin-left: 120px;
+  }
+  .parallax-two{
+    height: 550px; 
+  }
+ 
+  .carousel-caption {
+    position: absolute;
+    top: 150px;
+
+    }
+    .countup-card {
+      background: white; /* Background for cards */
+      border-radius: 8px; /* Rounded corners */
+      padding: 20px;
+      height: 180px;
+      width: 126px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+      flex: 1; 
+      margin: 10px; /* Space between cards */
+      }
+    
+}
+
+@media screen and (max-width:426px) {
+  .agnee-font{
+    font-size: 1.5rem;
+  }
+  .main-div-fr-two{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin-top: 20px;
+  }
+  .main-content-img{
+    width: 320px;
+    height: 250px;
+    margin-left: -20px;
+  }
+  .parallax-two{
+ display: none;
+  }
+  .countup-cards {
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+    }
+    .countup-card {
+      background: white;
+      border-radius: 8px; 
+      padding: 20px;
+      height: 180px;
+      width: 95%;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+      flex: 1; 
+      margin: 10px; 
+      }
+    
+}
+
+.homepage-full-image {
+  width: 100%;
+  height: 100vh; /* full screen */
+
+   background-color: #11343c;
+}
+
+.full-cover-img {
+  width: 100%;
+  height: 100%;
+   margin-top: 200px;
+   padding-bottom: 200px;
+/* makes it cover fully without stretching */
+}
+
+.service-card {
+  min-height: 300px; /* adjust height you want */
+    background-color: #11343c;
+
+}
+
+.service-img {
+  height: 300px;   
+       /* fixed image height */
+  object-fit: cover;    /* crop image instead of stretching */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
