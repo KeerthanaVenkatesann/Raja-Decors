@@ -41,8 +41,7 @@ nav('/contact-us')
       <div className='col-lg-6 col-md-11 pt-5 contact-us-home px-md-5' data-aos="fade-left">
         <h1 className='mt-5 text-primary'>Contact us<span className='text-danger'>!</span></h1>
         <p className='fs-5 text-secondary my-lg-2'>
-        At RentEase Group of Companies, we value every inquiry and are here to provide the support and information you need. Whether you're seeking rental partnerships, booking assistance, or general inquiries, our dedicated team is always ready to help.
-
+       
 
         </p>
         <button className='btn btn-outline-primary my-lg-2'onClick={handlecontact}>

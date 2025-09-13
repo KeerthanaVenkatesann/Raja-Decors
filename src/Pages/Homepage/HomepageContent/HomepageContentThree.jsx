@@ -127,12 +127,12 @@ const services = [
     <div>
       <HomepageContentThree/>
     
-      <section className="py-16 bg-gradient-to-b from-white to-gray-100 text-center">
+      <section className="pt-16 bg-gradient-to-b from-white to-gray-100 text-center">
         <h2
           className="text-4xl font-extrabold text-center  mb-12  p-5"
           data-aos="fade-up"
         >
-          <span className="bg-warning bg-opacity-25 p-3 border rounded-pill">   Our Signature Services  </span>
+          <span className=" p-3 w">   Our Signature Services  </span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-8 md:px-16">
@@ -146,12 +146,13 @@ const services = [
               <h3 className="text-2xl font-semibold mb-3 ">
                 {service.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed bg-warning bg-opacity-25 p-3">{service.desc}</p>
+              <p className="text-gray-600 leading-relaxed bg-warning bg-opacity-25 pt-3">{service.desc}</p>
             </div>
           ))}
         </div>
       </section>
-     
+  
+
       </div>
   );
 };

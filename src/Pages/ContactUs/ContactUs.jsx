@@ -172,7 +172,7 @@ export default function ContactUs() {
             <Box
                 sx={{
                     mt: '100px',
-                    backgroundColor: '#2e1a47',
+                 
                     color: 'white',
                     p: 2
                 }}
@@ -300,7 +300,7 @@ export default function ContactUs() {
             <Clients />
 
             {/* Menu (Décor Services) */}
-            <LineAnimations />
+            {/* <LineAnimations /> */}
         </>
     );
 }

@@ -118,6 +118,7 @@ function AnimatedRoutes() {
                <LineAnimations />
             </motion.div>
           }/>
+          
         </Route>
       </Routes>
     </AnimatePresence>

@@ -61,6 +61,7 @@ export default function CardComponent({item}) {
                 </Typography>
             </Box>
             <CardMedia 
+            className='cardmedia'
                 image={item.pic}
                 sx={{ height: 350,width:350 }} 
             />

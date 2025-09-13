@@ -11,7 +11,7 @@ const LineAnimations = () => {
   }, []);
 
   return (
-    <div className="menu-page container py-5 pt-5 mt-5">
+    <div className="menu-page container py-5  mt-5">
       {/* Title */}
       <motion.h1
         className="text-center mb-5 title decor-menu"

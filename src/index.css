@@ -42,3 +42,18 @@ body{
   overflow-x: hidden;
   position: relative; /* Ensure child elements are positioned properly */
 }
+
+@media (max-width: 420px) {
+  /* Your CSS styles for small screens */
+.image-round{
+  height: 350px !important;
+  width: 350px !important;
+  
+  
+  
+}
+.cardmedia{
+  height: 310px !important;
+  width: 310px !important;
+}
+}

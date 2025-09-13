@@ -1,99 +1,91 @@
+/* ✨ Glitter background animation */
+.glitter-header {
+  background: linear-gradient(90deg, #11343c, #1b4d58, #11343c);
+  background-size: 300% 300%;
+  animation: shimmerBG 12s ease infinite;
+  box-shadow: 
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5), 
+    inset -5px -5px 10px rgba(78, 78, 78, 0.7) !important; 
+
+
+}
+/* .glitter-header-outer{
+    box-shadow: 
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5), 
+    inset -5px -5px 10px rgba(255, 255, 255, 0.7); 
+} */
+
+@keyframes shimmerBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ✨ Glitter Nav Links */
+.link-nav-agnee {
+  color: #f8e58d;
+  font-family: "Merienda", cursive;
+  font-size: 17px;
+  text-decoration: none;
+  transition: 0.5s;
+  position: relative;
+}
+.link-nav-agnee:hover {
+  color: #fff9d6;
+  text-shadow: 0 0 5px #ffd700, 0 0 15px #ffe066;
+}
+
+/* Button Hover Border Animation */
 .btn-1 {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    transition: 0.5s;
-    letter-spacing: 4px;
-    text-decoration: none !important;
-  
-  }
-  
-  .btn-1:hover {
-    background: transparent;
-    
- 
-  }
-  Link{
-    text-decoration: none !important;
-  }
-  .btn-1 span {
-    position: absolute;
-    display: block;
-  }
-  
-  .btn-1 span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #FFD700);
-    transition: 1s;
-  }
-  
-  .btn-1:hover span:nth-child(1) {
-    left: 100%;
-  }
-  
-  .btn-1 span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #FFD700);
-    transition: 1s;
-    transition-delay: 0.25s;
-  }
-  
-  .btn-1:hover span:nth-child(2) {
-    top: 100%;
-  }
-  
-  .btn-1 span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #FFD700);
-    transition: 1s;
-    transition-delay: 0.5s;
-  }
-  
-  .btn-1:hover span:nth-child(3) {
-    right: 100%;
-  }
-  
-  .btn-1 span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #FFD700);
-    transition: 1s;
-    transition-delay: 0.75s;
-  }
-  
-  .btn-1:hover span:nth-child(4) {
-    bottom: 100%;
-  }
-  
-.link-nav-agnee{
-color:  #e8d671;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  letter-spacing: 2px;
+  background: transparent;
+}
+.btn-1:hover {
+  background: transparent;
+}
+.btn-1 span {
+  position: absolute;
+  display: block;
+}
 
- font-family: "Merienda", cursive;
-  font-optical-sizing: auto;
- font-size: 17px;
-  font-style: normal;
+/* 🍔 Hamburger Menu */
+.hamburger {
+  width: 30px;
+  height: 22px;
+  position: relative;
+  display: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #f8e58d;
+  border-radius: 2px;
+  transition: 0.4s;
+}
 
-
+/* Show hamburger only on mobile */
+@media (max-width: 900px) {
+  .hamburger {
+    display: flex;
   }
-.link-nav-agnee:hover{
-color:  #ede9d4;
-transition: 1s;
+}
 
-   font-family: "Merienda", cursive;
-  font-optical-sizing: auto;
-
-  font-style: normal;
-
-
+/* Hamburger to X animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
 }

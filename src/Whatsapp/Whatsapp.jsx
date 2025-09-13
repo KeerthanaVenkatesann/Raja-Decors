@@ -14,7 +14,7 @@ const Whatsapp = () => {
   const sendMessage = () => {
     if (message.trim()) {
       const encodedMessage = encodeURIComponent(message.trim());
-      window.open(`https://wa.me/+916379694255?text=${encodedMessage}`, '_blank'); // Replace with your number
+      window.open(`https://wa.me/+9109940229923?text=${encodedMessage}`, '_blank'); // Replace with your number
       setMessage(''); // Clear input after sending
     }
   };
@@ -36,7 +36,7 @@ const Whatsapp = () => {
           <button type="button" className="closePopup" onClick={togglePopup}>
             <i className="material-icons icon-font-color">close</i>
           </button>
-          <p className='text-primary'>Hello, 😊 need help?</p>
+          <p className='text-success'>Hello, 😊 need help?</p>
         </div>
         <div className="content-whatsapp -bottom d-flex">
           <input

@@ -125,10 +125,26 @@ const Aboutus = () => {
             About Us
           </h5>
           <p className="col-md-12 col-lg-10 fs-6 mt-4 text-light">
-            At Raja Decors, we transform ordinary spaces into extraordinary
-            experiences. With creativity, craftsmanship, and a passion for design,
-            we bring elegance and uniqueness to every project — from homes to
-            events and commercial spaces.
+           At Raja Decors, we have been transforming ordinary spaces into extraordinary experiences since 2005.
+For nearly two decades, we have combined creativity, innovation, and craftsmanship to bring your vision to life.
+Our passion for design drives us to create spaces that are both elegant and unique.
+We specialize in turning homes into warm, inviting sanctuaries.
+From living rooms to bedrooms, every corner reflects our attention to detail.
+We craft unforgettable event settings that leave lasting impressions on guests.
+From weddings to corporate events, our designs capture the essence of every occasion.
+Commercial spaces are also transformed by our team into functional and visually stunning environments.
+We believe every project deserves a personalized touch tailored to the client’s needs.
+Our designers merge modern trends with timeless elegance for exceptional results.
+Attention to detail, quality, and aesthetics is at the heart of our work.
+Client satisfaction is our top priority, guiding every decision we make.
+Our solutions are innovative, practical, and designed to elevate everyday experiences.
+We bring creativity not just in design, but also in materials, colors, and layouts.
+Every project is a collaboration, ensuring your dreams become reality.
+We take pride in delivering excellence on time and within budget.
+Our team is dedicated to making each space a reflection of your personality.
+From concept to completion, we handle every aspect with professionalism and care.
+With Raja Decors, ordinary spaces become extraordinary stories worth experiencing.
+Join us on a journey of design, elegance, and innovation that has been trusted since 2005.
           </p>
         </div>
 

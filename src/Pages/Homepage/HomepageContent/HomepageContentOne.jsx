@@ -99,7 +99,7 @@ export default function HomepageContentOne() {
       <img src={mainimage} alt="maincontentimg" className="full-cover-img" />
     </div>
     <HomepageContentThree/>
-   <Service/>
+<Service topMargin="50px" />
     </div>
   );
 }
