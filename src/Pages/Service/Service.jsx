@@ -105,7 +105,7 @@ Date: ${formData.eventDate}`;
           variant="h3"
           textAlign={"center"}
           className="agnee-clients"
-          fontFamily={'"Merienda", cursive'}
+          fontFamily={'"Times New Roman", Times , serif'}
         >
           Event Highlights
         </Typography>
@@ -158,14 +158,14 @@ Date: ${formData.eventDate}`;
           exit="hidden"
           viewport={{ once: false, amount: 0.2 }}
         >
-          <Box sx={{ maxWidth: "400px" }}>
+          <Box sx={{}}>
             <Typography
               variant="h5"
               textAlign={{ xs: "center", md: "left" }}
               mb={2}
-              marginRight={1}
+             
               fontWeight="bold"
-              fontFamily='"Merienda", cursive'
+              fontFamily='"Times New Roman", Times , serif'
             >
               From flowers to grand halls, Raja Decors transforms it all – reserve
               today, celebrate tomorrow!
@@ -194,7 +194,7 @@ Date: ${formData.eventDate}`;
           exit="hidden"
           viewport={{ once: false, amount: 0.2 }}
         >
-          <Box
+          {/* <Box
             sx={{
               position: "relative",
               width: "400px",
@@ -247,7 +247,7 @@ Date: ${formData.eventDate}`;
                 top: "50%",
               }}
             />
-          </Box>
+          </Box> */}
         </motion.div>
       </Box>
 

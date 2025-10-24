@@ -85,7 +85,7 @@ export default function Header() {
         {/* Desktop Menu */}
         <Box sx={{ display: { xs: "none", md: "flex" } }}>
           {menuItems.map((item, index) => (
-            <Button key={index} className="btn-1">
+            <Button key={index} className="btn-1"   sx={{ textTransform: "none" }}>
               <Link to={item.link} className="link-nav-agnee">
                 {item.label}
               </Link>
@@ -106,7 +106,7 @@ export default function Header() {
           }}
         >
           {menuItems.map((item, index) => (
-            <Button key={index} fullWidth sx={{ justifyContent: "start" }}>
+            <Button key={index} fullWidth sx={{ justifyContent: "start" , textTransform: "none" }}  >
               <Link to={item.link} className="link-nav-agnee">
                 {item.label}
               </Link>

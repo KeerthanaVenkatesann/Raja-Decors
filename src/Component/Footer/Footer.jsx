@@ -28,7 +28,7 @@ export default function Footer() {
             variant="h5" 
             mb={3} 
             fontWeight="bold"
-            sx={{ fontFamily: '"Merienda", cursive' }} 
+            sx={{ fontFamily: '"Times New Roman", Times , serif' }} 
           >
             Raja Decors
           </Typography>
@@ -44,7 +44,7 @@ export default function Footer() {
             variant="h6" 
             mb={3} 
             fontWeight="bold"
-            sx={{ fontFamily: '"Merienda", cursive' }}
+            sx={{ fontFamily: '"Times New Roman", Times , serif' }}
           >
             Quick Links
           </Typography>
@@ -62,7 +62,7 @@ export default function Footer() {
             variant="h6" 
             mb={3} 
             fontWeight="bold"
-            sx={{ fontFamily: '"Merienda", cursive' }}
+            sx={{ fontFamily: '"Times New Roman", Times , serif' }}
           >
             Reach Us
           </Typography>
@@ -88,7 +88,7 @@ export default function Footer() {
             variant="h6" 
             mb={3} 
             fontWeight="bold"
-            sx={{ fontFamily: '"Merienda", cursive' }}
+            sx={{ fontFamily: '"Times New Roman", Times , serif' }}
           >
             Follow Us
           </Typography>

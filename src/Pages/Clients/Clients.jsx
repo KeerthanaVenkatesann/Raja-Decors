@@ -9,8 +9,8 @@ import icon3 from '../../assets/ClientsThree.jpg';
 import icon4 from '../../assets/clientsfour.jpg';
 import icon5 from '../../assets/clientfive.png';
 // import icon5 from '../../assets/icon5.jpg';
-// import icon6 from '../../assets/icon6.jpg';
-// import icon7 from '../../assets/icon7.jpg';
+import icon6 from '../../assets/clientsix.jpg';
+import icon7 from '../../assets/clientseven.jpg';
 // import icon8 from '../../assets/icon8.jpg';
 // import icon9 from '../../assets/icon9.jpg';
 // import icon10 from '../../assets/icon10.jpg';
@@ -24,8 +24,8 @@ const Clientslogo = [
   { id: 3, name: 'icon3', src: icon3 },
   { id: 4, name: 'icon4', src: icon4 },
   { id: 5, name: 'icon5', src: icon5 },
-  // { id: 6, name: 'icon6', src: icon6 },
-  // { id: 7, name: 'icon7', src: icon7 },
+  { id: 6, name: 'icon6', src: icon6 },
+  { id: 7, name: 'icon7', src: icon7 },
   // { id: 8, name: 'icon8', src: icon8 },
   // { id: 9, name: 'icon9', src: icon9 },
   // { id: 10, name: 'icon10', src: icon10 },
@@ -48,7 +48,7 @@ function Clients() {
             key={logo.id}
             src={logo.src}
             alt={logo.name}
-            className="grayscale"  // Default class is grayscale
+            className=""  // Default class is grayscale
             data-aos="fade-up"  // AOS animation
           />
         ))}

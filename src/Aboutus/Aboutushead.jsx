@@ -17,7 +17,7 @@ export default function Aboutushead() {
             <Typography 
                 variant="h3" 
                 textAlign={'center'}
-                fontFamily= {'"Merienda", cursive'}
+                fontFamily= {'"Times New Roman", Times , serif'}
                 
             >
            About us

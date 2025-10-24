@@ -1,7 +1,7 @@
 
 
 *{
- font-family: "Merienda", cursive;
+ font-family:'Times New Roman', Times, serif;
   font-optical-sizing: auto;
 
   font-style: normal;
@@ -56,4 +56,7 @@ body{
   height: 310px !important;
   width: 310px !important;
 }
+}
+html, body {
+  overflow-x: hidden !important;
 }

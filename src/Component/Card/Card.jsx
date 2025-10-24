@@ -42,7 +42,7 @@ export default function CardComponent({item}) {
                         textAlign: 'center',
                         py: 1, 
                         textShadow: '1px 1px 3px black',
-                        fontFamily: '"Merienda", cursive',
+                        fontFamily: '"Times New Roman", Times , serif',
                     }}
                 >
                     {item.title}
@@ -53,7 +53,7 @@ export default function CardComponent({item}) {
                         textAlign: 'justify', 
                         textShadow: '1px 1px 2px #000000',
                         color: '#d3d2d2',
-                        fontFamily: '"Merienda", cursive',
+                        fontFamily: '"Times New Roman", Times , serif',
                     }} 
                     p= {3}
                 >
@@ -79,7 +79,7 @@ export default function CardComponent({item}) {
                     backgroundColor: 'white',
                     color: '#11343c',
                     width: '100%',
-                  fontFamily: '"Merienda", cursive',
+                  fontFamily: '"Times New Roman", Times , serif',
                 }} 
             >
                 {item.title}                

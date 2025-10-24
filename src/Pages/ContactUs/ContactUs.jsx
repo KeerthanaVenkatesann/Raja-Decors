@@ -28,7 +28,7 @@
 //                 <Typography
 //                     variant="h3"
 //                     textAlign={'center'}
-//                     fontFamily={'"Merienda", cursive'}
+//                     fontFamily={'"Times New Roman", Times , serif'}
 //                 >
 //                     Contact Us
 //                 </Typography>
@@ -57,7 +57,7 @@
 //                                     <Typography
 //                                         variant="h4"
 //                                         sx={{
-//                                             fontFamily: '"Merienda", cursive',
+//                                             fontFamily: '"Times New Roman", Times , serif',
 //                                             color: 'rgb(19, 115, 153)',
 //                                             textAlign: { md: 'start', xs: 'center' }
 //                                         }}
@@ -66,7 +66,7 @@
 //                                     </Typography>
 //                                     <Typography
 //                                         sx={{
-//                                             fontFamily: '"Merienda", cursive',
+//                                             fontFamily: '"Times New Roman", Times , serif',
 //                                             color: 'grey',
 //                                             width: { md: '100%' },
 //                                             textAlign: { md: 'start', xs: 'center' }
@@ -87,7 +87,7 @@
 //                                             columnGap: 2,
 //                                             color: 'black',
 //                                             alignSelf: { xs: 'center', md: 'start' },
-//                                             fontFamily: '"Merienda", cursive'
+//                                             fontFamily: '"Times New Roman", Times , serif'
 //                                         }}
 //                                         data-aos="zoom-in"
 //                                     >
@@ -107,7 +107,7 @@
 //                                             width: { xs: '280px', md: '100%' }
 //                                         }}
 //                                         color="inherit"
-//                                         fontFamily={'"Merienda", cursive'}
+//                                         fontFamily={'"Times New Roman", Times , serif'}
 //                                         data-aos="zoom-in"
 //                                     >
 //                                         <LocalPhoneOutlinedIcon sx={{ color: '#ea9390' }} />
@@ -127,7 +127,7 @@
 //                                             alignSelf: { xs: 'center', md: 'start' },
 //                                             width: { xs: '280px', md: '100%' }
 //                                         }}
-//                                         fontFamily={'"Merienda", cursive'}
+//                                         fontFamily={'"Times New Roman", Times , serif'}
 //                                         data-aos="zoom-in"
 //                                     >
 //                                         <MailOutlineOutlinedIcon sx={{ color: '#ea9390' }} />
@@ -181,7 +181,7 @@ export default function ContactUs() {
                 <Typography
                     variant="h3"
                     textAlign={'center'}
-                    fontFamily={'"Merienda", cursive'}
+                    fontFamily={'"Times New Roman", Times , serif'}
                 >
                     Contact Raja Decors
                 </Typography>
@@ -215,7 +215,7 @@ export default function ContactUs() {
                                     <Typography
                                         variant="h4"
                                         sx={{
-                                            fontFamily: '"Merienda", cursive',
+                                            fontFamily: '"Times New Roman", Times , serif',
                                             color: '#1c5656ff',
                                             textAlign: { md: 'start', xs: 'center' }
                                         }}
@@ -224,7 +224,7 @@ export default function ContactUs() {
                                     </Typography>
                                     <Typography
                                         sx={{
-                                            fontFamily: '"Merienda", cursive',
+                                            fontFamily: '"Times New Roman", Times , serif',
                                             color: 'grey',
                                             width: { md: '100%' },
                                             textAlign: { md: 'start', xs: 'center' }
@@ -242,7 +242,7 @@ export default function ContactUs() {
                                         columnGap: 2,
                                         color: 'black',
                                         alignSelf: { xs: 'center', md: 'start' },
-                                        fontFamily: '"Merienda", cursive'
+                                        fontFamily: '"Times New Roman", Times , serif'
                                     }}
                                     data-aos="zoom-in"
                                 >

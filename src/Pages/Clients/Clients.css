@@ -11,13 +11,12 @@
     height: auto;
     margin: 10px;
     cursor: pointer;
-    filter: grayscale(100%);
+    
     opacity: 0.6;
     transition: all 0.3s ease;  
   }
   .logo-container img:hover {
-    filter: grayscale(0) !important;
-    opacity: 1 !important;
+   
     transform: scale(1.1) !important;  
   }
   .agnee-clients{
