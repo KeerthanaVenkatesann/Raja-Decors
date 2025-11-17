@@ -96,12 +96,12 @@ export default function Footer() {
             <Link href="https://wa.me/919940229923" target="_blank" color="inherit">
               <FaWhatsappSquare size={28} />
             </Link>
-            <Link href="https://instagram.com/" target="_blank" color="inherit">
+            <Link href="https://www.instagram.com/rajadecorator?igsh=MWNlYTJyeHAwYm1mZg%3D%3D" target="_blank" color="inherit">
               <FaInstagram size={28} />
             </Link>
-            <Link href="https://facebook.com/" target="_blank" color="inherit">
+            {/* <Link href="https://facebook.com/" target="_blank" color="inherit">
               <FaFacebook size={28} />
-            </Link>
+            </Link> */}
           </Box>
         </Grid>
       </Grid>

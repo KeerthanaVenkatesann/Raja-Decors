@@ -11,7 +11,7 @@ import icon5 from '../../assets/clientfive.png';
 // import icon5 from '../../assets/icon5.jpg';
 import icon6 from '../../assets/clientsix.jpg';
 import icon7 from '../../assets/clientseven.jpg';
-// import icon8 from '../../assets/icon8.jpg';
+import icon8 from '../../assets/clienteight.png';
 // import icon9 from '../../assets/icon9.jpg';
 // import icon10 from '../../assets/icon10.jpg';
 // import icon11 from '../../assets/icon11.jpg';
@@ -26,7 +26,7 @@ const Clientslogo = [
   { id: 5, name: 'icon5', src: icon5 },
   { id: 6, name: 'icon6', src: icon6 },
   { id: 7, name: 'icon7', src: icon7 },
-  // { id: 8, name: 'icon8', src: icon8 },
+  { id: 8, name: 'icon8', src: icon8 },
   // { id: 9, name: 'icon9', src: icon9 },
   // { id: 10, name: 'icon10', src: icon10 },
   // { id: 11, name: 'icon11', src: icon11 },
